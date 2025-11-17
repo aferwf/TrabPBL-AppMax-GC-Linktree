@@ -30,7 +30,7 @@ const projectLinks = [
     title: "Dashboard",
     description: "Acesse a plataforma",
     icon: LayoutDashboard,
-    href: "https://dashboard.seu-projeto.com", // ⚠️ EDITE AQUI
+    href: "https://app-max-dashboard.vercel.app/", // ⚠️ EDITE AQUI
   },
   {
     title: "Repositório GitHub",
@@ -63,35 +63,35 @@ const projectLinks = [
 const teamMembers = [
   {
     name: "Manuella - Marketing e Design",
-    linkedinUrl: "https://linkedin.com/in/manuella", // ⚠️ EDITE AQUI com o link real
+    linkedinUrl: "https://www.linkedin.com/in/mabrum/", // ⚠️ EDITE AQUI com o link real
   },
   {
     name: "Mariana - Marketing e Design",
-    linkedinUrl: "https://linkedin.com/in/mariana", // ⚠️ EDITE AQUI com o link real
+    linkedinUrl: "https://www.linkedin.com/in/linkewez/", // ⚠️ EDITE AQUI com o link real
   },
   {
     name: "Fernanda - IA & Dados",
-    linkedinUrl: "https://linkedin.com/in/fernanda", // ⚠️ EDITE AQUI com o link real
+    linkedinUrl: "https://www.linkedin.com/in/fernanda-walther-fernandes/", // ⚠️ EDITE AQUI com o link real
   },
   {
     name: "Raziel - IA & Dados",
-    linkedinUrl: "https://linkedin.com/in/raziel", // ⚠️ EDITE AQUI com o link real
+    linkedinUrl: "https://www.linkedin.com/in/orazielblos/", // ⚠️ EDITE AQUI com o link real
   },
   {
     name: "Valentina - Programação Java",
-    linkedinUrl: "https://linkedin.com/in/valentina", // ⚠️ EDITE AQUI com o link real
+    linkedinUrl: "https://www.linkedin.com/in/valentina-bechara-scolari/", // ⚠️ EDITE AQUI com o link real
   },
   {
     name: "Gustavo - Programação Java",
-    linkedinUrl: "https://linkedin.com/in/gustavo", // ⚠️ EDITE AQUI com o link real
+    linkedinUrl: "https://www.linkedin.com/in/gustavohenriquebecker/", // ⚠️ EDITE AQUI com o link real
   },
   {
     name: "Dalessandro - Gestão Comercial",
-    linkedinUrl: "https://linkedin.com/in/dalessandro", // ⚠️ EDITE AQUI com o link real
+    linkedinUrl: "https://www.linkedin.com/in/dalessandro-goulart-oliveira-498aab28a/", // ⚠️ EDITE AQUI com o link real
   },
   {
     name: "Érica - Gestão Comercial",
-    linkedinUrl: "https://linkedin.com/in/erica", // ⚠️ EDITE AQUI com o link real
+    linkedinUrl: "https://www.linkedin.com/in/ericajulianiferreira/", // ⚠️ EDITE AQUI com o link real
   },
 ];
 
