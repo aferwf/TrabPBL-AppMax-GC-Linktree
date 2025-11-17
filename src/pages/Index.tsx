@@ -5,7 +5,8 @@ import {
   Github, 
   FileText, 
   BookOpen,
-  Users
+  Users,
+  Video
 } from "lucide-react";
 import { LinkCard } from "@/components/LinkCard";
 import { TeamModal } from "@/components/TeamModal";
@@ -31,7 +32,7 @@ const projectLinks = [
     title: "Dashboard",
     description: "Acesse a plataforma",
     icon: LayoutDashboard,
-    href: "https://app-max-dashboard.vercel.app/", // ⚠️ EDITE AQUI
+    href: "https://dashboard.seu-projeto.com", // ⚠️ EDITE AQUI
   },
   {
     title: "Fluxograma",
@@ -44,6 +45,12 @@ const projectLinks = [
     description: "Guia técnico detalhado",
     icon: BookOpen,
     href: "https://docs.seu-projeto.com", // ⚠️ EDITE AQUI
+  },
+  {
+    title: "Vídeo Demonstração",
+    description: "Assista ao projeto em ação",
+    icon: Video,
+    href: "https://seu-video-demo.com", // ⚠️ EDITE AQUI
   },
 ];
 
@@ -58,17 +65,17 @@ const projectLinks = [
 const repositories = [
   {
     name: "Backend",
-    description: "Acesse o repositório do backend",
+    description: "API e servidor",
     repoUrl: "https://github.com/seu-usuario/backend-repo", // ⚠️ EDITE AQUI
   },
   {
     name: "Dashboard",
-    description: "Acesse o repositório do dashboard",
+    description: "Painel de controle",
     repoUrl: "https://github.com/seu-usuario/dashboard-repo", // ⚠️ EDITE AQUI
   },
   {
     name: "Landing Page",
-    description: "Acesse o repositório da landing page",
+    description: "Página inicial",
     repoUrl: "https://github.com/seu-usuario/landing-repo", // ⚠️ EDITE AQUI
   },
 ];
