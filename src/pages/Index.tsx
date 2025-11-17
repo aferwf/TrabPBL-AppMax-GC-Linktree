@@ -31,7 +31,7 @@ const projectLinks = [
     title: "Dashboard",
     description: "Acesse a plataforma",
     icon: LayoutDashboard,
-    href: "https://dashboard.seu-projeto.com", // ⚠️ EDITE AQUI
+    href: "https://app-max-dashboard.vercel.app/", // ⚠️ EDITE AQUI
   },
   {
     title: "Fluxograma",
@@ -58,17 +58,17 @@ const projectLinks = [
 const repositories = [
   {
     name: "Backend",
-    description: "API e servidor",
+    description: "Acesse o repositório do backend",
     repoUrl: "https://github.com/seu-usuario/backend-repo", // ⚠️ EDITE AQUI
   },
   {
     name: "Dashboard",
-    description: "Painel de controle",
+    description: "Acesse o repositório do dashboard",
     repoUrl: "https://github.com/seu-usuario/dashboard-repo", // ⚠️ EDITE AQUI
   },
   {
     name: "Landing Page",
-    description: "Página inicial",
+    description: "Acesse o repositório da landing page",
     repoUrl: "https://github.com/seu-usuario/landing-repo", // ⚠️ EDITE AQUI
   },
 ];
