@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import { LinkCard } from "@/components/LinkCard";
 import { TeamModal } from "@/components/TeamModal";
+import { RepoModal } from "@/components/RepoModal";
 import logo from "@/assets/logo.png";
 
 /**
@@ -30,13 +31,7 @@ const projectLinks = [
     title: "Dashboard",
     description: "Acesse a plataforma",
     icon: LayoutDashboard,
-    href: "https://app-max-dashboard.vercel.app/", // ⚠️ EDITE AQUI
-  },
-  {
-    title: "Repositório GitHub",
-    description: "Veja o código-fonte",
-    icon: Github,
-    href: "https://github.com/seu-usuario/seu-repo", // ⚠️ EDITE AQUI
+    href: "https://dashboard.seu-projeto.com", // ⚠️ EDITE AQUI
   },
   {
     title: "Fluxograma",
@@ -49,6 +44,32 @@ const projectLinks = [
     description: "Guia técnico detalhado",
     icon: BookOpen,
     href: "https://docs.seu-projeto.com", // ⚠️ EDITE AQUI
+  },
+];
+
+/**
+ * ===================================
+ * CONFIGURAÇÃO DOS REPOSITÓRIOS
+ * ===================================
+ * 
+ * Para adicionar/editar repositórios, atualize o array abaixo:
+ */
+
+const repositories = [
+  {
+    name: "Backend",
+    description: "API e servidor",
+    repoUrl: "https://github.com/seu-usuario/backend-repo", // ⚠️ EDITE AQUI
+  },
+  {
+    name: "Dashboard",
+    description: "Painel de controle",
+    repoUrl: "https://github.com/seu-usuario/dashboard-repo", // ⚠️ EDITE AQUI
+  },
+  {
+    name: "Landing Page",
+    description: "Página inicial",
+    repoUrl: "https://github.com/seu-usuario/landing-repo", // ⚠️ EDITE AQUI
   },
 ];
 
@@ -112,6 +133,7 @@ const projectInfo = {
 
 const Index = () => {
   const [isTeamModalOpen, setIsTeamModalOpen] = useState(false);
+  const [isRepoModalOpen, setIsRepoModalOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-background">
@@ -151,11 +173,49 @@ const Index = () => {
             />
           ))}
 
+          {/* GitHub Repositories Button */}
+          <button
+            onClick={() => setIsRepoModalOpen(true)}
+            className="group relative block w-full p-6 rounded-xl bg-card shadow-lg hover:shadow-glow transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1 animate-fade-in-up border border-border hover:border-primary/50"
+            style={{ animationDelay: `${projectLinks.length * 100}ms` }}
+          >
+            <div className="relative flex items-center gap-4">
+              <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                <Github className="w-6 h-6 text-primary" />
+              </div>
+              
+              <div className="flex-1 min-w-0 text-left">
+                <h3 className="text-lg font-semibold text-foreground">
+                  Repositórios GitHub
+                </h3>
+                <p className="text-sm text-muted-foreground mt-1">
+                  Veja nosso código-fonte
+                </p>
+              </div>
+              
+              <div className="flex-shrink-0">
+                <svg
+                  className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </div>
+            </div>
+          </button>
+
           {/* Team Button */}
           <button
             onClick={() => setIsTeamModalOpen(true)}
             className="group relative block w-full p-6 rounded-xl bg-gradient-primary shadow-lg hover:shadow-glow transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1 animate-fade-in-up"
-            style={{ animationDelay: `${projectLinks.length * 100}ms` }}
+            style={{ animationDelay: `${(projectLinks.length + 1) * 100}ms` }}
           >
             <div className="relative flex items-center gap-4">
               <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center">
@@ -197,6 +257,13 @@ const Index = () => {
           </p>
         </footer>
       </div>
+
+      {/* Repo Modal */}
+      <RepoModal
+        isOpen={isRepoModalOpen}
+        onClose={() => setIsRepoModalOpen(false)}
+        repositories={repositories}
+      />
 
       {/* Team Modal */}
       <TeamModal
