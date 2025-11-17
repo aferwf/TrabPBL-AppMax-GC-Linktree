@@ -2,8 +2,7 @@ import { useState } from "react";
 import { 
   Home, 
   LayoutDashboard, 
-  Github, 
-  FileText, 
+  Github,  
   BookOpen,
   Users,
   Video
@@ -26,19 +25,13 @@ const projectLinks = [
     title: "Landing Page",
     description: "Conheça nosso projeto",
     icon: Home,
-    href: "https://seu-projeto.com", // ⚠️ EDITE AQUI
+    href: "https://appmax-rastreio-automatico.vercel.app/", // ⚠️ EDITE AQUI
   },
   {
     title: "Dashboard",
     description: "Acesse a plataforma",
     icon: LayoutDashboard,
     href: "https://app-max-dashboard.vercel.app/", // ⚠️ EDITE AQUI
-  },
-  {
-    title: "Fluxograma",
-    description: "Entenda a arquitetura",
-    icon: FileText,
-    href: "https://seu-fluxograma.com", // ⚠️ EDITE AQUI
   },
   {
     title: "Documentação Completa",
@@ -66,7 +59,7 @@ const repositories = [
   {
     name: "Backend",
     description: "API e servidor",
-    repoUrl: "https://github.com/seu-usuario/backend-repo", // ⚠️ EDITE AQUI
+    repoUrl: "https://github.com/valentinascolari/projeto-appmax-grupo-10", // ⚠️ EDITE AQUI
   },
   {
     name: "Dashboard",
@@ -76,7 +69,7 @@ const repositories = [
   {
     name: "Landing Page",
     description: "Página inicial",
-    repoUrl: "https://github.com/seu-usuario/landing-repo", // ⚠️ EDITE AQUI
+    repoUrl: "https://github.com/valentinascolari/landing-page-appmax", // ⚠️ EDITE AQUI
   },
 ];
 
