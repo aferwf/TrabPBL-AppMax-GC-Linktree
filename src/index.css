@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* AppMax inspired color palette - Professional fintech design */
+    --background: 256 100% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Primary: Purple brand color (#9b6afa) */
+    --primary: 260 94% 70%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 260 94% 80%;
+
+    /* Secondary: Rich purple accent */
+    --secondary: 260 94% 70%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted tones */
+    --muted: 220 13% 95%;
+    --muted-foreground: 220 9% 46%;
+
+    /* Accent: Vibrant purple */
+    --accent: 260 94% 70%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 260 94% 70%;
+
+    --radius: 0.75rem;
+
+    /* Custom design tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(260 94% 70%), hsl(260 94% 80%));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%), hsl(256 100% 99%));
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-glow: 0 0 20px hsl(260 94% 70% / 0.3);
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 15%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 15%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 260 94% 75%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 260 94% 85%;
+
+    --secondary: 260 94% 75%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 222 47% 20%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 260 94% 75%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 222 47% 20%;
+    --input: 222 47% 20%;
+    --ring: 260 94% 75%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(260 94% 75%), hsl(260 94% 85%));
+    --gradient-card: linear-gradient(135deg, hsl(222 47% 15%), hsl(222 47% 18%));
+    --shadow-glow: 0 0 20px hsl(260 94% 75% / 0.4);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
