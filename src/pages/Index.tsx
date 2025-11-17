@@ -32,7 +32,7 @@ const projectLinks = [
     title: "Dashboard",
     description: "Acesse a plataforma",
     icon: LayoutDashboard,
-    href: "https://dashboard.seu-projeto.com", // ⚠️ EDITE AQUI
+    href: "https://app-max-dashboard.vercel.app/", // ⚠️ EDITE AQUI
   },
   {
     title: "Fluxograma",
@@ -44,13 +44,13 @@ const projectLinks = [
     title: "Documentação Completa",
     description: "Guia técnico detalhado",
     icon: BookOpen,
-    href: "https://docs.seu-projeto.com", // ⚠️ EDITE AQUI
+    href: "https://drive.google.com/file/d/1YQLzi0ZfHHXGmKIW1zZfbQCOAY0pE4U_/view?usp=sharing", // ⚠️ EDITE AQUI
   },
   {
     title: "Vídeo Demonstração",
     description: "Assista ao projeto em ação",
     icon: Video,
-    href: "https://seu-video-demo.com", // ⚠️ EDITE AQUI
+    href: "https://drive.google.com/file/d/1WW4fUEjgy4b7_OlYnsMK1_h9rKXnOA-0/view?usp=sharing", // ⚠️ EDITE AQUI
   },
 ];
 
@@ -71,7 +71,7 @@ const repositories = [
   {
     name: "Dashboard",
     description: "Painel de controle",
-    repoUrl: "https://github.com/seu-usuario/dashboard-repo", // ⚠️ EDITE AQUI
+    repoUrl: "https://github.com/aferwf/TrabPBL-AppMax-GC-Dashboard.git", // ⚠️ EDITE AQUI
   },
   {
     name: "Landing Page",
